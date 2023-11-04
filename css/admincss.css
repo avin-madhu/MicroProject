@@ -43,7 +43,7 @@
 
 .container .content h3 {
     font-size: 30px;
-    color: #333;
+    color: #ffffff;
 }
 
 .container .content h3 span {
@@ -55,7 +55,7 @@
 
 .container .content h1 {
     font-size: 50px;
-    color: #333;
+    color: #ffffff;
 }
 
 .container .content h1 span {
@@ -71,7 +71,7 @@
     display: inline-block;
     padding: 10px 30px;
     font-size: 20px;
-    background: rgb(106, 124, 214);
+    background: rgba(68, 89, 197, 0.644);
     color: #fff;
     margin: 0 5px;
     text-transform: capitalize;
@@ -80,7 +80,7 @@
 }
 
 .container .content .btn:hover {
-    background: rgb(0, 45, 112);
+    background: rgba(128, 179, 255, 0.703);
     transition: ease-in-out 0.2s; 
 }
 
@@ -161,130 +161,8 @@
     padding: 10px;
 }
 
-/* <-------------------- USER PAGE ------------------------>*/
-
-.navbar {
-    background-color: rgb(51, 51, 51)272; 
-    overflow: hidden;
-}
 
 
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar li {
-    float: left; 
-    margin: 5px;
-    top: 2px;
-}
-
-.navbar a {
-    display: block; 
-    color: #fff; 
-    text-align: center; 
-    padding: 15px 20px; 
-    text-decoration: none; 
-    margin: 5px;
-    top: 2px;
-}
-
-.navbar a:hover {
-    background-color: #8196ce;
-    border-radius: 20px;
-    transition: ease-in-out 0.2s;
-    
-}
-
-.navbar li:hover ul {
-    display: block;
-}
-
-.navbar ul ul {
-    display: none; 
-    position: absolute;
-    background-color: #f1f1f100; 
-    z-index: 1;
-}
-
-.navbar ul ul li {
-    float: none;
-}
-
-.navbar ul ul a {
-    padding: 10px 20px;
-}
-
-.navbar ul ul a:hover {
-    background-color: rgb(85, 85, 85);
-}
-
-/*<------------------------------------ PRODUCTS PAGE----------------------------------------->*/
-
-/* styles.css */
-
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-.slider-container {
-    display: flex;
-    overflow-x: auto;
-    padding: 20px;
-}
-
-.slider {
-    display: flex;
-}
-
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    margin-right: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.card h3 {
-    padding: 10px;
-    margin: 0;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.product-details {
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.product-details h2 {
-    text-align: center;
-    color: #3498db;
-}
-
-#productDescPrice{
-    color: red;
-}
-
-.product-details p {
-    text-align: left;
-} */
 
 /* Add more CSS rules for responsiveness and customization as needed */
 
@@ -298,7 +176,73 @@
     }
 }
 
-/*<---------------------------- PRODUCT DETAILS ----------------------------------------->*/
+#navbarAdmin{
+
+    background-color: #33333300;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    
+}
+
+#navbarAdmin ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbarAdmin li{
+   float: left;
+}
+
+#navbarAdmin a:hover {
+    background-color: rgba(129, 150, 206, 0);
+    border-radius: 20px;
+    color: #eee;
+    transition: ease-in-out 0.2s;
+}
+
+#navbarAdmin a {
+    display: block; 
+    color: #a7a7a7; 
+    text-align: center; 
+    padding: 15px 20px; 
+    text-decoration: none; 
+}
+
+  /*--------------------------------------------- admin page basic style -------------------------------------------*/
+
+  #userPageText{
+    color: rgb(193, 209, 223);
+}
+
+body {
+    /* background: linear-gradient(-45deg, #000000, #27000f, #002d3e, #003327);
+    background-size: 400% 400%; */
+    /* animation: gradient 15s ease infinite; */
+    background-color: #000000;
+    height: 100vh;
+    background-image: url("../assets/basketballll.png");
+ background-size: contain;
+  }
   
-  
-  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  p{
+    color: #eee;
+  }
+
+
+  .content a{
+      background-color: #297fb982;
+  }

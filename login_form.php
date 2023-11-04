@@ -37,6 +37,7 @@ if(isset($_POST['submit'])){
    }
 
 }else{
+   $loggedIn = true;
 }
 ?>
 
@@ -68,7 +69,7 @@ if(isset($_POST['submit'])){
       <input type="email" name="email" required placeholder="Email">
       <input type="password" name="password" required placeholder="Password">
       <input type="submit" name="submit" value="login now" class="form-btn">
-      <p>don't have an account? <a href="register_form.php">register now</a></p>
+      <p id="registerCheckId">Don't have an account? <a href="register_form.php">register now</a></p>
    </form>
 
 </div>

@@ -1,0 +1,170 @@
+/* styles.css */
+
+body{
+    background: linear-gradient(-45deg, #000000, #27000f, #002d3e, #003327);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    color: aliceblue;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  /*<---------------------- drop down --------------------------->*/
+
+  /* styles.css */
+
+.filter-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db00;
+  }
+  
+  label {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #category-select {
+    padding: 8px;
+    border: none;
+    background-color: #297fb900;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #category-select:hover {
+    background-color: #333333;
+  }
+  
+  /* Style the dropdown arrow */
+  #category-select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 14px;
+    pointer-events: none;
+  }
+  
+  /* Remove the default select styles */
+  #category-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+/*<------------------------------------------------------------------>*/  
+
+
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #00000000;
+  }
+  
+  .product-card {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.3s, ease, transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover img {
+    transform: scale(1.0);
+  }
+  
+  .more-link {
+    display: block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .more-link:hover {
+    color: #2980b9;
+  }
+
+  .product-img-container{
+     height: 200px;
+     width: 200px;
+     background-color: #ddd;
+     margin: auto;
+     align-items: center;
+  }
+  
+  .slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-top: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .slider img {
+    transition: ease 0.3s;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .slider img:hover {
+    transform: scale(1.1);
+  }
+  
+  .product-details {
+    display: none;
+    
+  }
+  
+  
+  /* Slide-in animation for product details */
+  .product-details.active {
+    display: block;
+    animation: slideIn 0.5s ease;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
