@@ -1,0 +1,108 @@
+/* .paybtn{
+   padding: 20px; 
+   color: rgb(112, 151, 217);
+}
+
+.Quantity{
+   padding: 20px;
+   color: rgb(112, 151, 217);
+}
+
+.product-details-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 70px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; 
+  padding: 50px;
+
+}
+
+.product-details {
+  flex: 1;
+  text-align: center;
+  padding: 50px;
+}
+
+.product-details img {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.product-details img:hover {
+  transform: scale(1.1);
+}
+
+.product-details #productDescPrice {
+  font-size: 24px;
+  color: #d25757;
+  margin: 10px 0;
+}
+
+.product-details p {
+  font-size: 16px;
+  color: #666;
+}
+
+.price {
+  font-size: 24px;
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+.add-to-cart,
+.pay-now, .Quantity {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-inline-start: 20px;
+  margin-inline-end: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover,
+.pay-now:hover {
+  background-color: #2980b9;
+} */
+
+
+
+/* Add additional animations, styles, and features as needed */
+
+body {
+  background: linear-gradient(-45deg, #000000, #27000f, #002d3e, #003327);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#productDescPrice{
+
+  color: #e74c3c;
+  font-size: 20px;
+}
