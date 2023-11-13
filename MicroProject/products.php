@@ -19,6 +19,28 @@ if (!isset($_SESSION['user_name'])) {
 </head>
 <body>
 
+<style>
+
+#addtocartbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color */
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#addtocartbtn:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+</style>
+
 <div class="navbar">
         <ul>
             <li><a href="user_page.php">Home</a></li>
@@ -45,7 +67,7 @@ if (!isset($_SESSION['user_name'])) {
 <?php
 
 
-$query = "SELECT * FROM products";
+$query = "SELECT * FROM products ORDER BY RAND() LIMIT 100";
 $result = mysqli_query($conn, $query);
 
 while ($row = mysqli_fetch_assoc($result)) {
@@ -58,6 +80,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     echo '<p> Qty: ' . $row['Quantity'] . '</p>';
     echo '<h2 id="productPrice">$ ' . $row['Price'] . '</h2>';
     echo '<a href="productDesc.php?product_id=' . $row['Price'] . '" class="more-link">View Details</a>';
+  
     echo '</div>';
     echo '</div>';
 }
@@ -81,6 +104,7 @@ while ($row = mysqli_fetch_assoc($result)) {
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script >
   AOS.init();
+
 </script>
 </body>
 </html>

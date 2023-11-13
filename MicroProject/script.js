@@ -1,33 +1,11 @@
-// Get a reference to the category select element
-const categorySelect = document.getElementById('category-select');
 
-// Get references to all product cards
-const productCards = document.querySelectorAll('.product-card');
-
-// Add event listener to the category select
-categorySelect.addEventListener('change', filterProducts);
-
-function filterProducts() {
-  const selectedCategory = categorySelect.value;
-
-  // Loop through each product card and check if it matches the selected category
-  productCards.forEach((card) => {
-    const dataCategory = card.getAttribute('data-category');
-    if (selectedCategory === 'all' || selectedCategory === dataCategory) {
-      card.style.display = 'block'; // Display the matching product card
-      
-    } else {
-      card.style.display = 'none'; // Hide non-matching product cards
-    }
-  });
-}
 
 function generateUniqueID() {
   return Math.floor(Math.random() * 1000000); // You can adjust the range as needed
 }
 
 // Wait for the HTML document to load
-document.addEventListener(onload(), function() {
+document.addEventListener('onload', function() {
   // Get a reference to the <p> element
   var pElement = document.getElementById('hidden-id');
 
@@ -55,3 +33,28 @@ document.addEventListener(onload(), function() {
     // Call the function to set up event listeners
     getProductId();
 
+    // 
+
+//document.getElementById('quantityinput').addEventListener('change', updatePrice());
+
+    var updatedPrice =0;
+    var initialPrice = parseFloat(document.getElementById('productDescPrice').innerText.replace('$ ', ''));
+    function updatePrice() {
+      // Get the quantity input value
+      var quantity = parseFloat(document.getElementById('quantityinput').value);
+      console.log(quantity);
+
+      // Assuming the initial price is 19.99, update it based on the quantity
+      
+      
+      updatedPrice = initialPrice * quantity;
+
+      // Display the updated price
+      document.getElementById('productDescPrice').innerText = '$ ' + updatedPrice.toFixed(2);
+  }
+
+
+  document.getElementById('purchasenowbtn').addEventListener('click', ()=>{
+          alert("Successfully Purchased!  🎉  🎉 ")
+  })
+  
