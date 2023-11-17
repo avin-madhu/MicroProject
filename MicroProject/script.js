@@ -9,7 +9,7 @@ document.addEventListener('onload', function() {
   // Get a reference to the <p> element
   var pElement = document.getElementById('hidden-id');
 
-  // Generate the unique ID
+  // Generate the 
   var uniqueID = generateUniqueID();
 
   // Insert the unique ID into the <p> element's text content
